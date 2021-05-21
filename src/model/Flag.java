@@ -41,6 +41,7 @@ public class Flag {
             }
             bf.write(ESC + color + "m" + line);
             bf.flush();
+            Thread.sleep(sleep);
             height++;
             bf.write(ESC + initialPosition + ";" + height + "f");
 
